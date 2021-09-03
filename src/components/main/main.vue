@@ -16,13 +16,23 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      center: '武汉'
+      center: '武汉',
+      count: 1
     }
   },
   components: {
     BaiduMap
   },
   mounted () {
+    InitMap()
+  },
+  methods: {
+    // InitMap: function(){
+    //    var map = new BMapGL.Map("allmap");                // 创建地图实例
+    //    var point = new BMapGL.Point(116.404, 39.915);     // 设置中心点坐标
+    //    map.centerAndZoom(point, 12);                      // 设置地图级别
+    //    map.enableScrollWheelZoom(); 
+    // },
   }
 }
 </script>
